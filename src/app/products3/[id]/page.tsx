@@ -1,8 +1,8 @@
-'use client';  // Add this line to mark the component as a Client Component
+'use client';  
 import Recomendation from '@/components/Recomendation/Recomendation';
 import Review from '@/components/Review';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';  // Import useParams from next/navigation
+import { useParams } from 'next/navigation'; 
 import { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { TiTick } from 'react-icons/ti';
@@ -73,7 +73,7 @@ const productData = [
 ];
 
 const ProductDetails = () => {
-  const { id } = useParams();  // Use useParams to get dynamic id from the URL
+  const { id } = useParams(); 
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
